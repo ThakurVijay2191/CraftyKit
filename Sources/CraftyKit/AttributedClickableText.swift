@@ -30,7 +30,7 @@ struct AttributedLinkText: View {
                     .contentShape(.rect)
                     .onTapGesture {
                         if isLink(index){
-                            Utils.shared.debug("CLICKED_LINK", logMessage: getClickedLink(list[index]))
+                            onClick(list[index])
                         }
                     }
             }
